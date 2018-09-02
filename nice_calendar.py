@@ -10,9 +10,6 @@ commitsCount = currentDay + 2
 if currentDay == 6:
     commitsCount = 1
 
-commitsCount = commitsCount + 5 #just test
-
-
 print("commitsCount " + str(commitsCount))
 
 for i in range(commitsCount):
@@ -25,4 +22,4 @@ for i in range(commitsCount):
 
     os.system("git add . && git commit -m \"update calendar\" && git push -u origin")
 
-print("finished, hope everything is ok")
+print("finished, I hope that everything is ok")
