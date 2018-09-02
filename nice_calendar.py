@@ -1,6 +1,5 @@
 import os
 import datetime
-from subprocess import call
 
 
 fileName = "state"
@@ -23,7 +22,7 @@ for i in range(commitsCount):
 
     with open(fileName, 'w') as file:
         file.write("commit")
-        
+
     os.system("git add . && git commit -m \"update calendar\" && git push -u origin")
 
 print("finished, hope everything is ok")
