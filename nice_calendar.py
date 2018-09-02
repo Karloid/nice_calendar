@@ -3,8 +3,7 @@ import datetime
 
 fileName = "state"
 
-today = datetime.datetime.today()
-currentDay = today.weekday()
+currentDay = datetime.datetime.today().weekday()
 
 commitsCount = currentDay + 2
 if currentDay == 6:
@@ -18,7 +17,7 @@ for i in range(commitsCount):
     os.system("git pull")
 
     with open(fileName, 'a') as file:
-        file.write("\ni:" + str(i) + str(today))
+        file.write("\ni:" + str(i) + " " + str(datetime.datetime.today()))
 
     os.system("git add . && git commit -m \"update calendar\" && git push -u origin")
 
