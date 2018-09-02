@@ -1,6 +1,9 @@
 import os
 import datetime
 
+print("Starting... hello people ")
+print(str(datetime.datetime.today()))
+
 fileName = "state"
 
 currentDay = datetime.datetime.today().weekday()
