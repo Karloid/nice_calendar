@@ -20,7 +20,7 @@ for i in range(commitsCount):
 
     os.system("git pull")
 
-    with open(fileName, 'w') as file:
+    with open(fileName, 'a') as file:
         file.write("commit")
 
     os.system("git add . && git commit -m \"update calendar\" && git push -u origin")
